@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cosmic Code Breaker</title>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Cosmic Code Breaker: Guessing Game" />
+    <meta
+      property="og:description"
+      content="Greetings, Earthling! In our cosmic calculations, we require a random number between 1 and 20 to align our quantum flux capacitors – your assistance will ensure the stability of our interstellar voyage!"
+    />
+    <meta property="og:image" content="img/banner.jpg" />
+    <meta name="twitter:image" content="img/banner.jpg" />
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/alien.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Cosmic Code Breaker</h1>
+      <p>(Between 1 and 20)</p>
+      <div class="dots-background"></div>
+    </header>
+
+    <section class="number-field">
+      <div class="number-left">
+        <p class="secret-number">?</p>
+      </div>
+      <div class="number-right">
+        <img src="img/alien.png" width="250" height="250" alt="" />
+      </div>
+    </section>
+
+    <div class="guess-field">
+      <div class="guess-left">
+        <input type="number" class="guess-number" />
+        <button class="btn check">Check!</button>
+        <button class="btn again">Play Again!</button>
+      </div>
+      <div class="guess-right">
+        <p class="message">Start guessing...</p>
+        <p>💯 Score: <span class="score">20</span></p>
+        <p>🥇 Highscore: <span class="highscore">0</span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

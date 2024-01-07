@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1,
+header p {
+  color: white;
+}
+header h1 {
+  padding-top: 3rem;
+}
+
+header p {
+  font-size: 10px;
+  padding-top: 1rem;
+}
+
+.number-field {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  justify-content: center;
+  padding: 2rem 0 0.8rem 0;
+}
+
+.number-field p {
+  color: white;
+  font-size: 12px;
+}
+
+.number-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.number-left p {
+  font-size: 40px;
+  color: #222;
+  background-color: white;
+  padding: 3rem;
+  box-shadow: 10px 10px 10px 0.8px rgb(0, 194, 253, 0.6);
+  border-radius: 5px;
+}
+
+.guess-field {
+  display: grid;
+  grid-template-columns: 800px 800px;
+  justify-content: center;
+  text-align: center;
+  gap: 100px;
+}
+
+.guess-left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: end;
+}
+
+.guess-number {
+  background: none;
+  border: solid 3px white;
+  color: white;
+  font-size: 40px;
+  width: 200px;
+  height: 110px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.btn.check,
+.btn.again {
+  width: 245px;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-family: 'Press Start 2P', sans-serif;
+  cursor: pointer;
+}
+
+.guess-right {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.guess-right p {
+  padding-top: 1rem;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.message {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+/* Styles for devices with a maximum width of 480 pixels (typical for phones) */
+@media only screen and (max-width: 500px) {
+  .number-field {
+    grid-template-columns: 1fr;
+  }
+
+  .number-right img {
+    display: none;
+  }
+
+  .guess-field {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .guess-left,
+  .guess-right {
+    align-items: center;
+  }
+
+  .guess-left {
+    order: 1;
+  }
+
+  .guess-right {
+    order: 0;
+  }
+  .guess-right p {
+    padding-top: 0px;
+    font-size: 10px;
+  }
+  .message {
+    width: auto;
+  }
+
+  .guess-number {
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+  }
+
+  .btn.check,
+  .btn.again {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
