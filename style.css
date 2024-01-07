@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Press Start 2P', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1,
